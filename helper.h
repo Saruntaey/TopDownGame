@@ -12,5 +12,8 @@ void loadCharacter(Character *goblin, Character *mushroom, Character *skeleton, 
 void UnloadCharacter(Character *goblin, Character *mushroom, Character *skeleton, Character *knight);
 void print_health(Hero *kn);
 void plotMiniMap(Hero *p, Enemy *enemies[], int enemiesSize, Texture *map, float mapScale, float windowWidth, float windowHeight);
-
+// game logic
+void gameIntro(int windowWidth, int windowHeight, bool &isFirstOpen, bool &reqWindowClose);
+void gameLogic(int windowWidth, int windowHeight, bool &reqWindowClose);
+void gameOver(bool &reqWindowClose);
 #endif
